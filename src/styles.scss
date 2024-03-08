@@ -1,0 +1,155 @@
+$bg-color: #1c1b1a;
+$violet-main: #8c01fa;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.main-container {
+    background-color: $bg-color;
+    width: 100%;
+    height: 100vh;
+}
+
+.nexa-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 0px 20px;
+
+    img {
+        width: 200px;
+        height: 37px;
+    }
+
+    .text-header {
+        color: white;
+        font-size: 10px;
+
+        h3 {
+            color: $violet-main;
+        }
+    }
+
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+            color: $violet-main;
+            gap: 20px;
+            padding-right: 70px;
+            list-style: none;
+            transition: ease-in-out 0.3s;
+
+            li {
+                display: flex;
+                justify-content: center;
+                gap: 3px;
+                cursor: pointer;
+
+                &:hover {
+                    color: white;
+                    transition: ease-in-out 0.3s;
+                }
+            }
+        }
+    }
+}
+
+        
+.get-meta {
+    padding: 80px 0px 0px 100px;
+
+}
+
+.transations-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0px  0px 100px;
+
+    .balance-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        h1 {
+            color: white;
+        }
+
+        .input-wallet {
+            color: white;
+            background: none;
+            border-color: $violet-main;
+            width: 500px;
+        }
+
+        .button-balance {
+            color: $violet-main;
+            background-color: white;
+            &:hover {
+                background-color: $violet-main;
+                color: white;
+
+            }
+        }
+    }
+}
+
+.text-balance {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+
+    p {
+        color:$violet-main;
+        
+    }
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.send-container {
+    display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-top: 50px;
+
+        h2 {
+            color: white;
+        }
+
+        .input-send {
+            color: white;
+            background: none;
+            border-color: $violet-main;
+            width: 300px;
+        }
+
+        .input-value {
+            color: white;
+            background: none;
+            border-color: $violet-main;
+            width: 120px;
+        }
+
+        .button-send {
+            color: $violet-main;
+            background-color: white;
+
+            &:hover {
+                background-color: $violet-main;
+                color: white;
+
+            }
+        }
+}
